@@ -1,28 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Top.css";
+import logo from "./img/logo.png";
+import disconnect from "./img/disconnect.png";
+
 function Top() {
-
-  const [topbarBlack, setTopbarBlack] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setTopbarBlack(true);
-    });
-    return () => {
-      window.removeEventListener("scroll");
-    };
-  }, []);
-
-  return (
-    <nav className={`${topbarBlack && "top_black"}`}>
+    return (
+    <nav className="top_black">
       <div className="top_contents">
-        <img
-          className="top_logo"
-          src="./img/logo.png"
-        />
-        <img
-          className="top_avatar"
-          src="./img/user.png"
-        />
+        <img className="top_logo" src={logo} alt=""/>
+        <img className="top_disconnect" src={disconnect} onClick="" alt=""/>
       </div>
     </nav>
   );

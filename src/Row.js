@@ -26,7 +26,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   };
   const movieClicked = (moviename) => {
     console.log(moviename);
-    if (trailerUrl != "") setTrailerUrl("");
+    if (trailerUrl !== "") setTrailerUrl("");
     else {
       movieTrailer(moviename)
         .then((url) => {
@@ -56,7 +56,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
         ))}
         {/* </div> */}
       </ScrollContainer>
-      {trailerUrl != "" && <YouTube videoId={trailerUrl} opts={youtubeOpts} />}
+      {trailerUrl !== "" && <YouTube videoId={trailerUrl} opts={youtubeOpts} />}
     </div>
   );
 }
