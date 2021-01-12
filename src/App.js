@@ -3,11 +3,11 @@ import "./App.css";
 import Row from "./Row";
 import requests from "./requests";
 import Banner from "./Banner";
-import Nav from "./Nav";
+import Top from "./Top";
 function App() {
   return (
     <div className="app">
-      <Nav />
+      <Top />
       <Banner />
       <Row
         isLargeRow
