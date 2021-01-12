@@ -23,20 +23,20 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url('${base_url}${movie?.backdrop_path}')`, //optional chaining: no need to check if movie is undefined '?' saw this neat trick on stackoverflow
+        backgroundImage: `url('${base_url}${movie.backdrop_path}')`, //optional chaining: no need to check if movie is undefined '?' saw this neat trick on stackoverflow
         backgroundPosition: "center center",
       }}
     >
       <div className="banner__contents">
         <h1 className="banner__title">
           {/* i notice that some movies give u a title a name or an orginal name , api information isnt consistent   */}
-          {movie?.name || movie?.title || movie?.orginal_name}
+          {movie.name || movie.title || movie.orginal_name}
         </h1>
         <div className="banner__buttons">
           <button className="banner__button">Jouer</button>
           <button className="banner__button">Plus d'infos</button>
         </div>
-        <p className="banner__description">{movie?.overview}</p>
+        <p className="banner__description">{movie.overview}</p>
       </div>
       <div className="banner--fadeBottom" />
     </header>
