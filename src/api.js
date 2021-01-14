@@ -1,10 +1,11 @@
+
 const express = require('express'),
     app = express(),
     mysql = require('mysql'), // import mysql module
     cors = require('cors'),
     bodyParser = require('body-parser');
 
-db = mysql.createConnection({
+    mysql.db = mysql.createConnection({
     host: 'localhost',
     user: 'zekir',
     password: 'zekir2012',
