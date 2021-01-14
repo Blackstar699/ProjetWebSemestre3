@@ -27,18 +27,18 @@ function Banner() {
         backgroundPosition: "center center",
       }}
     >
-      <div className="banner__contents">
-        <h1 className="banner__title">
+      <div className="banner_contents">
+        <h1 className="banner_title">
           {/* i notice that some movies give u a title a name or an orginal name , api information isnt consistent   */}
           {movie.name || movie.title || movie.orginal_name}
         </h1>
-        <div className="banner__buttons">
-          <button className="banner__button">Jouer</button>
-          <button className="banner__button">Plus d'infos</button>
+        <div className="banner_buttons">
+          <button className="banner_button">Lire</button>
+          <button className="banner_button">Plus d'infos</button>
         </div>
-        <p className="banner__description">{movie.overview}</p>
+        <p className="banner_description">{movie.overview}</p>
       </div>
-      <div className="banner--fadeBottom" />
+      <div className="banner_fadeBottom" />
     </header>
   );
 }
