@@ -6,12 +6,12 @@ const express = require('express'),
 
 db = mysql.createConnection({
     host: 'localhost',
-    user: 'zekir',
-    password: 'zekir2012',
+    user: 'matt',
+    password: 'matt',
     database: 'netflix_like'
-})
+});
 
-var server = {
+const server = {
     port: 3306
 };
 

@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
-import Row from "./Row";
-import requests from "./requests";
-import Banner from "./Banner";
-import Top from "./Top";
+//import Row from "./Row";
+//import requests from "./requests";
+//import Banner from "./Banner";
+//import Top from "./Top";
+import login from "./login";
+
 function App() {
   return (
-    <div className="app">
+    /*<div className="app">
       <Top />
       <Banner />
       <Row
@@ -34,7 +36,8 @@ function App() {
         title="Thriller"
         fetchUrl={requests.fetchNetflixOriginals}
       />
-    </div>
+    </div>*/
+      login
   );
 }
 
