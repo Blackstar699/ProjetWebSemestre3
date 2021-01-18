@@ -1,6 +1,12 @@
 import React from 'react';
 import './loginPage.css';
 
+function getUsers(){
+    fetch(`/api/users`)
+        .then((response) => response.json())
+        .then(users => console.log(users));
+}
+
 function Login(props){
     return(
         <div className={'box'}>
@@ -66,6 +72,7 @@ class LoginPage extends React.Component{
         }
         return(
             <div className={'authBox'}>
+                {getUsers()}
                 <div className={'leftBox'}>
                     <div className={'bgGreen'} />
                     <div className={'imageAuth'} />

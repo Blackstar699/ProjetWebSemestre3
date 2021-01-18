@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import requests from "./requests";
 import "./Banner.css";
-import api from "./api";
 const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Banner() {

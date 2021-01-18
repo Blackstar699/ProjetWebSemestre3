@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Row.css";
-import api from "./api";
 import ScrollContainer from "react-indiana-drag-scroll";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
