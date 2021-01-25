@@ -5,13 +5,12 @@ import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 
 
-const base_url = "https://image.tmdb.org/t/p/original/";
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(fetchUrl);
+      const request = '/api/films/all';
       setMovies(request.data.results);
     }
     fetchData();
@@ -47,9 +46,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             }
             key={movie.id}
             className={`row__poster ${isLargeRow && "row__posterLarge"}`} //use && if theres no else or : otherwise use ?
-            src={`${base_url}${
-              isLargeRow ? movie.poster_path : movie.backdrop_path
-            }`}
+            src={`requete sql ici`}
             alt={movie.name}
           />
         ))}
